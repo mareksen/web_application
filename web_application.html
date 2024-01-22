@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InsuranceApp</title>
+<link rel="stylesheet" type="text/css" href="web_application.css">
+</head>
+<body>
+<div id="app">
+  <!-- App's header with the name -->
+  <header>
+    <h1>InsuranceApp</h1>
+  </header>
+
+  <!-- Form to add a new insured individual -->
+  <section id="new-insured">
+    <h2>Add New Insured</h2>
+    <form id="add-insured-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="surname" placeholder="Surname" required>
+      <input type="number" id="age" placeholder="Age" required>
+      <input type="tel" id="phone" placeholder="Phone" required>
+      <button type="submit">Save</button>
+    </form>
+  </section>
+
+  <!-- Section to display the list of insured persons -->
+  <section id="insured">
+    <h2>List of Insured</h2>
+    <table>
+      <thead>
+        <!-- Column headers for the insured table -->
+        <tr>
+          <th>Name and Surname</th>
+          <th>Phone</th>
+          <th>Age</th>
+          <!-- Column header for delete buttons -->
+          <th>Delete</th> 
+        </tr>
+      </thead>
+      <tbody id="insured-list">
+        <!-- Data for the insured will be dynamically inserted here -->
+      </tbody>
+    </table>
+  </section>
+</div>
+<script src="web_application.js"></script>
+</body>
+</html>

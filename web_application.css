@@ -1,0 +1,154 @@
+
+  /* Basic CSS reset for consistent look across browsers */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Setting fonts and background for the whole page */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #2d2929;
+    line-height: 1.4;
+  }
+
+  /* Styling the app's header */
+  header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2.3rem 5rem 0.1rem; /* Combined padding with top and bottom values */
+}
+
+  /* Centering the main content of the app */
+  #app {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  /* Styles for headings in the app */
+  h2 {
+    color: #333;
+  }
+  h1 {
+    color: #f2f2f2;
+
+  }
+
+  /* Styles for the table with the list of insured */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  /* Styles for the section with the list of insured */
+#insured {
+  background-color: #fff; /* Set white background */
+  padding: 20px; /* Add padding to match the 'Add New Insured' section */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow to match the 'Add New Insured' section */
+  margin-bottom: 2rem; /* Maintain consistent spacing from the elements below */
+}
+
+
+  /* Common styles for the table header and cells */
+  table, th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Specific styles for the table header */
+  th {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+  }
+
+  /* Styles for table rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Styles for the section with the form to add a new insured */
+  #new-insured {
+  background-color: #fff;
+  padding: 1rem; /* Combined padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 4rem auto; /* Combined margin with top value only */
+}
+
+/* Increasing space above the h2 heading in the sections */
+h2 {
+  margin-top: 1rem; /* Corrected margin-top value */
+}
+
+/* For consistency, you may also want to add a bottom margin to the h1 header */
+header h1 {
+  margin-bottom: 4rem; /* Sets the bottom margin to 2rem */
+}
+
+
+/* Styles for the form input fields */
+#add-insured-form input[type=text],
+#add-insured-form input[type=number],
+#add-insured-form input[type=tel] {
+  width: calc(33.333% - 10px);
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Styles for the form button */
+#add-insured-form button {
+  padding: 10px 26px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles for the button on hover */
+#add-insured-form button:hover {
+  background-color: #4cae4c;
+}
+
+/* Responsive styles for small devices */
+@media (max-width: 768px) {
+#app {
+  width: 95%;
+}
+/* Combine input styles for small devices */
+#add-insured-form input[type=text],
+  #add-insured-form input[type=number],
+  #add-insured-form input[type=tel] {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+#add-insured-form input {
+  width: 100%;
+  margin: 5px 0;
+}
+
+
+/* Styles for the delete button */
+.delete-btn {
+  padding: 10px 20px;
+  background-color: #d9534f; /* Bootstrap's btn-danger background color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center; /* Center the text inside the button */
+  display: block; /* Make the button a block element to fill the cell */
+  margin: auto; /* Center the button within the cell */
+}
+
+/* Styles for the delete button on hover */
+.delete-btn:hover {
+  background-color: #c9302c; /* A darker shade of red for hover effect */
+}
+
+
